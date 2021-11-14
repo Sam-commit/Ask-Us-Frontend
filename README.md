@@ -21,11 +21,37 @@ Ask Us is a flutter based android app. It's basically a discussion forum somewha
 
 Before cloning the project make sure you have set up the IDE correctly according to the resources given in the getting started section. 
 
+## App Design
+
+To get an idea how the app will look like, head over to the following figma link:- 
+- [Ask Us Design](https://www.figma.com/file/DrJfbkx9c5h2ac4dQtfgWn/AskUs?node-id=0%3A1)
+
 ## How to contribute
 
 - After setting up the project on the local system, go to the issues section to claim issues.
 - Remember to regularly pull the updates made by others on the repo to avoid merge conflicts.
 - Read all the guidelines carefully before making any pull request on the repo.
+
+IMPORTANT NOTE:-
+Please attach screenshots of the runnuing app on your emulator of the changes that you have done before making a pr.
+
+## Using Api for Backend
+
+The Following endpoints are currently live :-
+- For posting new questions [POST] :- https://askusdev.herokuapp.com/question/
+- For getting list of all questions [GET] :- https://askusdev.herokuapp.com/question/
+- For creating new answer having question id = qid [POST] :- https://askusdev.herokuapp.com/question/{qid}/answer/
+- For retrieving all answers of question having id = qid. [GET] :- https://askusdev.herokuapp.com/question/{qid}/answer/
+
+Schema :- 
+
+![WhatsApp Image 2021-10-14 at 6 13 59 PM](https://user-images.githubusercontent.com/75803425/137736064-9acb8060-4c7b-4961-8be0-e99f93ee5637.jpeg)
+
+Data to be sent in JSON format.
+Fields required while creating a new question and answer are specified in schema, other fields will be filled automatically.
+
+For any doubt, feel free to ask us on our [discord](https://discord.gg/9McHvjbz) channel.
+ 
 
 ## Guidelines
 
